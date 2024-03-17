@@ -2,6 +2,9 @@
 
 # React Scroll Snapper
 
+[![npm](https://img.shields.io/npm/v/react-scroll-snapper)](https://www.npmjs.com/package/react-scroll-snapper)
+[![bundlephobia](https://img.shields.io/bundlephobia/minzip/react-scroll-snapper)](https://bundlephobia.com/package/react-scroll-snapper)
+
 A library for creating swipeable views using CSS scroll snap.
 
 Originally developed as a replacement for the [`react-swipeable-views`](https://github.com/oliviertassinari/react-swipeable-views) which is not compatible with latest React and no longer maintained.
