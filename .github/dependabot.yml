@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: monthly
     groups:
+      dev-major:
+        dependency-type: development
+        update-types:
+          - major
       dev-minor:
         dependency-type: development
         update-types:
