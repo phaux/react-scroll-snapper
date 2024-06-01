@@ -225,7 +225,7 @@ You can set `max-height` on the container and add `overflow-y: scroll` to the pa
 
 # API
 
-**react-scroll-snapper** • API
+**react-scroll-snapper** • **Docs**
 
 ---
 
@@ -235,10 +235,10 @@ Props for the [ScrollSnapper](README.md#scrollsnapper) component.
 
 ### Properties
 
-| Property        | Type                                                      | Description                                                                                                                                                                                                                                                                     |
-| :-------------- | :-------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `index`         | `number`                                                  | The current page index.<br /><br />Can be changed to programmatically scroll to a different page.                                                                                                                                                                               |
-| `onIndexChange` | (`index`: `number`, `target`: `HTMLDivElement`) => `void` | A callback which runs after the container is scrolled to a page.<br /><br />This will run even if the user scrolled but ended up on the same page.<br /><br />Scrolling triggered by changing the `index` prop will also trigger this callback after the animation is finished. |
+| Property        | Type                                                      | Description                                                                                                                                                                                                                                                                  |
+| :-------------- | :-------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `index`         | `number`                                                  | <p>The current page index.</p><p>Can be changed to programmatically scroll to a different page.</p>                                                                                                                                                                          |
+| `onIndexChange` | (`index`: `number`, `target`: `HTMLDivElement`) => `void` | <p>A callback which runs after the container is scrolled to a page.</p><p>This will run even if the user scrolled but ended up on the same page.</p><p>Scrolling triggered by changing the `index` prop will also trigger this callback after the animation is finished.</p> |
 
 ---
 
