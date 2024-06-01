@@ -27,7 +27,7 @@
     "dist"
   ],
   "scripts": {
-    "doc": "npx typedoc --plugin typedoc-plugin-markdown --readme none --disableSources --hidePageTitle --hideBreadcrumbs --hideInPageTOC --outputFileStrategy modules --excludeGroups --propertiesFormat table --parametersFormat table src/index.ts && grep -B999 '# API' README.md > README.md~ && cat docs/README.md >> README.md~ && mv README.md~ README.md",
+    "doc": "npx typedoc --plugin typedoc-plugin-markdown --readme none --outputFileStrategy modules --hidePageTitle --disableSources --excludeGroups --hideBreadcrumbs --propertiesFormat table --parametersFormat table src/index.ts && grep -B999 '# API' README.md > README.md~ && cat docs/README.md >> README.md~ && mv README.md~ README.md",
     "format": "eslint --fix . && prettier --write .",
     "prepare": "parcel build --target main --target types --target styles",
     "start": "parcel serve --target default --dist-dir example/dist",
