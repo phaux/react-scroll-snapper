@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: monthly
     groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
       parcel:
         patterns:
           - "parcel"
