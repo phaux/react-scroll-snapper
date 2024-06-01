@@ -5,15 +5,17 @@ updates:
     schedule:
       interval: monthly
     groups:
-      dev-major:
-        dependency-type: development
+      parcel:
+        patterns:
+          - "parcel"
+          - "@parcel/*"
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint/*"
+    ignore:
+      - dependency-name: eslint
         update-types:
-          - major
-      dev-minor:
-        dependency-type: development
-        update-types:
-          - minor
-          - patch
+          - version-update:semver-major
   - package-ecosystem: github-actions
     directory: /
     schedule:
