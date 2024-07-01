@@ -81,7 +81,7 @@
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typedoc": "^0.25.12",
+    "typedoc": "^0.26.3",
     "typedoc-plugin-markdown": "^4.0.0-next.53",
     "typescript": "^5.4.2",
     "typescript-plugin-css-modules": "^5.1.0"
