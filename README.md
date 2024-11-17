@@ -195,7 +195,7 @@ For Safari:
 
 ```css
 .noScrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 ```
 
