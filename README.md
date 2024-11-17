@@ -191,6 +191,16 @@ Add `scrollbar-width: none` to the container:
 }
 ```
 
+For Safari:
+
+```css
+.noScrollbar::-webkit-scrollbar {
+  display: none;
+}
+```
+
+Usage:
+
 ```jsx
 <ScrollSnapper className="noScrollbar">...</ScrollSnapper>
 ```
