@@ -29,7 +29,7 @@
   "scripts": {
     "format": "prettier --write .",
     "prepare": "tsc",
-    "start": "vite --open example.html",
+    "start": "vite",
     "test": "tsc --noEmit"
   },
   "prettier": {
