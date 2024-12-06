@@ -24,6 +24,7 @@ If you don't need to control the current page from JavaScript, you can use a sim
 }
 
 .ScrollSnapper > * {
+  box-sizing: border-box; /* if not set globally */
   width: 100%;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -125,19 +126,19 @@ You can import only the styles from this library and use them with the snippets 
 Import the styles in your HTML:
 
 ```html
-<link rel="stylesheet" href="react-scroll-snapper/dist/index.css" />
+<link rel="stylesheet" href="react-scroll-snapper/index.css" />
 ```
 
 or in your CSS:
 
 ```css
-@import "react-scroll-snapper/dist/index.css";
+@import "react-scroll-snapper/index.css";
 ```
 
 or in your JavaScript if your bundler supports it:
 
 ```js
-import "react-scroll-snapper/dist/index.css"
+import "react-scroll-snapper/index.css"
 ```
 
 > [!TIP]
@@ -147,7 +148,7 @@ import "react-scroll-snapper/dist/index.css"
 > That way you don't need to install this library in your node_modules and you can use the styles without any build tools.
 >
 > ```html
-> <link rel="stylesheet" href="https://esm.sh/react-scroll-snapper/dist/index.css" />
+> <link rel="stylesheet" href="https://esm.sh/react-scroll-snapper/index.css" />
 > ```
 
 ## Using the React component
@@ -155,7 +156,7 @@ import "react-scroll-snapper/dist/index.css"
 You can use the `ScrollSnapper` component to easily bind the current page index to your React state:
 
 ```jsx
-import "react-scroll-snapper/dist/index.css"
+import "react-scroll-snapper/index.css"
 import { ScrollSnapper } from "react-scroll-snapper"
 import { useState } from "react"
 
@@ -227,30 +228,11 @@ You can set `max-height` on the container and add `overflow-y: scroll` to the pa
 
 ## Developing
 
-- `npm start`: Start the example app from `example/` using Parcel.
-- `npm run doc`: Emit documentation into `README.md` using TypeDoc.
-- `npm run format`: Format all code using ESLint and Prettier.
-- `npm run prepare`: Build the code from `src/` to `dist/` using Parcel.
-- `npm test`: Check all code using TypeScript, ESLint and Prettier.
+- `npm start`: Start the example app using vite.
+- `npm run prepare`: Build the library using tsc.
+- `npm test`: Check code using tsc.
 
 # API
-
-**react-scroll-snapper** • **Docs**
-
----
-
-## ScrollSnapperProps
-
-Props for the [ScrollSnapper](README.md#scrollsnapper) component.
-
-### Properties
-
-| Property        | Type                                                      | Description                                                                                                                                                                                                                                               |
-| --------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `index`         | `number`                                                  | The current page index. Can be changed to programmatically scroll to a different page.                                                                                                                                                                    |
-| `onIndexChange` | (`index`: `number`, `target`: `HTMLDivElement`) => `void` | A callback which runs after the container is scrolled to a page. This will run even if the user scrolled but ended up on the same page. Scrolling triggered by changing the `index` prop will also trigger this callback after the animation is finished. |
-
----
 
 ## ScrollSnapper()
 
@@ -267,3 +249,16 @@ Scroll Snapper React component.
 ### Returns
 
 `Element`
+
+---
+
+## ScrollSnapperProps
+
+Props for the [ScrollSnapper](README.md#scrollsnapper) component.
+
+### Properties
+
+| Property        | Type                                                      | Description                                                                                                                                                                                                                                               |
+| --------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `index`         | `number`                                                  | The current page index. Can be changed to programmatically scroll to a different page.                                                                                                                                                                    |
+| `onIndexChange` | (`index`: `number`, `target`: `HTMLDivElement`) => `void` | A callback which runs after the container is scrolled to a page. This will run even if the user scrolled but ended up on the same page. Scrolling triggered by changing the `index` prop will also trigger this callback after the animation is finished. |
