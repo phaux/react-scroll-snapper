@@ -23,7 +23,9 @@ export interface ScrollSnapperProps {
 /**
  * Scroll Snapper React component.
  */
-export function ScrollSnapper(props: ScrollSnapperProps & React.HTMLProps<HTMLDivElement>) {
+export function ScrollSnapper(
+  props: ScrollSnapperProps & React.HTMLProps<HTMLDivElement>,
+): JSX.Element {
   const { className = "", index, onIndexChange, onScroll, ...rootProps } = props
 
   const containerRef = useRef<HTMLDivElement>(null)

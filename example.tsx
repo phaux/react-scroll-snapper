@@ -1,6 +1,8 @@
+/// <reference types="vite/client" />
 import { StrictMode, useState } from "react"
 import { createRoot } from "react-dom/client"
-import { ScrollSnapper } from "../src"
+import "./index.css"
+import { ScrollSnapper } from "./index.js"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -8,7 +10,7 @@ createRoot(document.getElementById("root")!).render(
   </StrictMode>,
 )
 
-export function App() {
+function App(): JSX.Element {
   const [page, setPage] = useState(1)
   const [containerStyle, setContainerStyle] = useState<React.CSSProperties>({})
   const [childStyle, setChildStyle] = useState<React.CSSProperties>({})
@@ -58,7 +60,14 @@ export function App() {
             auctor nisl.
           </p>
         </div>
-        <div id="page1" style={{ margin: "32px", backgroundColor: "lightblue", ...childStyle }}>
+        <div
+          id="page1"
+          style={{
+            margin: "32px",
+            backgroundColor: "lightblue",
+            ...childStyle,
+          }}
+        >
           <h2>Page 1</h2>
           <p>
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
@@ -76,7 +85,11 @@ export function App() {
         </div>
         <div
           id="page2"
-          style={{ border: "4px solid green", backgroundColor: "lightgreen", ...childStyle }}
+          style={{
+            border: "4px solid green",
+            backgroundColor: "lightgreen",
+            ...childStyle,
+          }}
         >
           <h2>Page 2</h2>
           <p>

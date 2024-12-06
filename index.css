@@ -6,6 +6,7 @@
 }
 
 .ScrollSnapper > * {
+  box-sizing: border-box;
   width: 100%;
   flex-shrink: 0;
   scroll-snap-align: center;
