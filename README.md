@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/react-scroll-snapper)](https://www.npmjs.com/package/react-scroll-snapper)
 [![bundlephobia](https://img.shields.io/bundlephobia/minzip/react-scroll-snapper)](https://bundlephobia.com/package/react-scroll-snapper)
 
-[![codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/phaux/react-scroll-snapper/main?import=true&embed=1&file=/example/index.tsx)
+[![codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/phaux/react-scroll-snapper/main?import=true&embed=1&file=/example.tsx)
 
 A library for creating swipeable views using CSS scroll snap.
 
