@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from "react"
+import { useCallback, useEffect, useRef, type JSX } from "react"
 
 /**
  * Props for the {@link ScrollSnapper} component.
@@ -29,7 +29,7 @@ export function ScrollSnapper(
   const { className = "", index, onIndexChange, onScroll, ...rootProps } = props
 
   const containerRef = useRef<HTMLDivElement>(null)
-  const scrollTimeout = useRef<number>()
+  const scrollTimeout = useRef<number>(null)
   const lastChildrenCount = useRef(0)
 
   // on every rerender
