@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-snapper",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Swipeable views for React using CSS scroll snap",
   "keywords": [
     "swipe",
