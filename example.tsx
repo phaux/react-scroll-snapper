@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-import { StrictMode, useState } from "react"
+import { StrictMode, useState, type JSX } from "react"
 import { createRoot } from "react-dom/client"
 import "./index.css"
 import { ScrollSnapper } from "./index.js"
@@ -42,12 +42,12 @@ function App(): JSX.Element {
       </p>
 
       <ScrollSnapper
-        style={{ gap: "16px", border: "1px solid #333", ...containerStyle }}
+        style={{ gap: "16px", border: "1px solid currentColor", ...containerStyle }}
         className="yourClassName"
         index={page}
         onIndexChange={setPage}
       >
-        <div id="page0" style={{ padding: "32px", backgroundColor: "salmon", ...childStyle }}>
+        <div id="page0" style={{ padding: "32px", backgroundColor: "#fa807280", ...childStyle }}>
           <h2>Page 0</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in egestas orci.
@@ -64,7 +64,7 @@ function App(): JSX.Element {
           id="page1"
           style={{
             margin: "32px",
-            backgroundColor: "lightblue",
+            backgroundColor: "#add8e660",
             ...childStyle,
           }}
         >
@@ -86,8 +86,8 @@ function App(): JSX.Element {
         <div
           id="page2"
           style={{
-            border: "4px solid green",
-            backgroundColor: "lightgreen",
+            border: "4px solid #90ee90",
+            backgroundColor: "#90ee9080",
             ...childStyle,
           }}
         >

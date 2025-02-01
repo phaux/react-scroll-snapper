@@ -41,13 +41,13 @@
     "semi": false
   },
   "devDependencies": {
-    "@types/react": "^18.2.65",
-    "@types/react-dom": "^18.2.21",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
     "prettier": "^3.4.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^5.4.2",
-    "vite": "^6.0.2"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11"
   },
   "peerDependencies": {
     "react": "*"
