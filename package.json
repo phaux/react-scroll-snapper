@@ -20,7 +20,10 @@
   "sideEffects": false,
   "type": "module",
   "main": "./index.js",
-  "exports": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./index.css": "./index.css"
+  },
   "types": "./index.d.ts",
   "files": [
     "index.js",

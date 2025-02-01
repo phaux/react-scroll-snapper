@@ -174,11 +174,11 @@ function App() {
 ```
 
 > [!TIP]
-> Consider simply copy-pasting the [component's source code](./src/ScrollSnapper.tsx) into your project.
+> Consider simply copy-pasting the [component's source code](./index.tsx) into your project.
 > It's very small and easy to maintain and doesn't have any dependencies.
 > You can also add any additional features you need yourself.
 
-See [`example/index.tsx`](./example/index.tsx) for a more complete example.
+See [`example`](./example.tsx) for a more complete example.
 
 ## Tips
 
