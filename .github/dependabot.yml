@@ -3,7 +3,10 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
+    cooldown:
+      semver-major-days: 90
+      semver-minor-days: 30
   - package-ecosystem: github-actions
     directory: /
     schedule:
