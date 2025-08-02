@@ -8,6 +8,13 @@ updates:
     cooldown:
       semver-major-days: 90
       semver-minor-days: 45
+    groups:
+      prod:
+        dependency-type: production
+        update-types: ["minor", "patch"]
+      dev:
+        dependency-type: development
+        update-types: ["minor", "patch"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
